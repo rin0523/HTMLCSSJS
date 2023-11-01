@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색속성</title>
+    <!-- 
+        색상 관련 속성 
+        -color : 글자 색 
+        -background-color : 배경색 
+        -border-color: 테두리색 
+         색 지정 방법
+          - 이미 지정된 이름을 사용하는 경우 : red,blue,green
+          -색상 코드를 사용하는 방법 : 16진수 코드 
+          - rgb 코드를 사용하는 방법 : rgb(`255,0,0);
+          - rgb 코드 : 기본rgb + a (투명도) 추가
+          a : 투명도0~1 
+     -->
+     <style>
+        div{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        div.color{
+            color: blue;
+        }
+        div.bgcolor{
+            background-color:blueviolet;
+        }
+        div.border{
+            /*두께, 스타일, 색 */
+            border: 1px solid black;
+
+            /* border-style: solid;
+            border-width: 1px;
+            border-color: yellowgreen; */
+        }
+
+        p{
+            font-size: 20px;
+        }
+        p.a{
+            color: blue;
+        }
+        p.c{
+            color:blue;
+        }
+
+        /* nth-child (모든 요소 순번 ) */
+        /* nth-of-type() : 해당 타입만 순번 */
+        
+        /*
+        p:nth-child(odd){
+            color: red; 
+        }
+        */
+
+
+     </style>
+</head>
+<body>
+   
+     <div class="color">안녕하세요(글자색)</div>
+     <div class="bgcolor">안녕하세요(배경색)</div>
+     <div class="border">안녕하세요(테두리색)</div>
+     <!-- p태그 3개 생성 -->
+     <!-- 1,3번 p 태그에 색상 파랑 설정 -->
+     <!-- 모든 p태그에 폰트 사이즈 20px로 적용하시오.  -->
+     
+
+     <p class="a">안녕</p>
+     <p class="b">안녕</p>
+     <p class="c">안녕</p>
+    
+</body>
+</html>

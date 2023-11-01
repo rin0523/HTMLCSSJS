@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lotto</title>
+</head>
+<body>
+
+    <h1>
+        1~45 까지 중복되지 않게 숫자 6개를 랜덤으로 추출 => 추출
+        set 객체를 사용하여 생성 
+    </h1>
+    
+
+    <button type="button" id="makeRandom">랜덤번호 6자리 생성(출력)</button>
+    <h1 id="printNum">로또번호 출력</h1>
+    <button type="button" id="makeRandom2">당첨번호 7자리(마지막 번호는 보너스 번호) 생성(출력) </button>
+    <h1 id="printNum2">당첨번호 출력</h1>
+    <button type="button" onclick="ranking()">결과 확인</button>
+    <h1 id="printResult">당첨여부출력</h1>
+
+    <script>
+
+   const lottoArray =[]; //user 
+   const lottoSet=new Set(); 
+   const rNumArr=[];   // 당첨번호 
+   const rNumSet= new Set(); 
+   let bonus=0;
+
+   //splice(index,count):index부터 count까지 제거
+   //splice(index, count,item ... ) : 제거 후 요소 삽입 
+
+
+
+   document.getElementById('makeRandom').addEventListener('click' ,()=>{
+    lottoArray.splice(0,6)    
+    //6자리 로또 번호 생성 
+    randomNum(lottoSet,lottoArray,6)
+    console.log("set>>>" + rNumSet);
+    console.log("arr>>>" + rNumArr);
+    lottoSet.clear();
+    document.getElementById('printNum').innerText=lottoArray; 
+   });
+
+
+   document.getElementById('makeRandom2').addEventListener('click',()=>{
+    //7자리 로또 번호 생성 
+    randomNum(rNumSet,rNumArr,7);
+    console.log(rNumSet);
+    bonus=rNumArr.pop();
+    rNumSet.clear();
+    document.getElementById('printNum2').innerText=rNumArr+"["+bonus+ "]";
+   });
+   
+
+
+   function randomNum(lottoSet,arr,num){
+      //arr, num (채울 개수)
+      while(lottoSet.size<num){ //set.size는 반드시 들어가야 함 
+          let rNum=Math.floor(Math.random()*45)+1;
+          lottoSet.add(rNum);
+
+      }
+
+      for(let num of lottoSet){
+        arr.push(num);
+      }
+   }
+
+
+
+   function ranking(){
+    let cnt=0;
+    for(const a of lottoArray){ //6자리 사용자 번호 
+        for(const b of rNumArr){ //당첨번호 중 보너스 빠진 6가지 값 비교 
+            if(a==b){
+                cnt++;
+                
+            }
+        }
+    }console.log(cnt);
+    let print = '';
+    switch(cnt){
+        case 6 : print= '1등 당첨' ; break;
+        case 5 : lottoArr.includes(bonus)? print='2등 당첨'
+                   :print='3등 당첨'; break;
+        case 4 : print='4등 당첨'; break;
+        case 3 : print='5등 당첨' ; break;
+        default : 
+        print='꽝';
+    }
+
+    document.getElementById('printResult').innerText= "("+cnt+")" +print;
+    
+   }
+
+
+
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>count 만들기 </title>
+</head>
+<body>
+    <!-- 
+        button 2개를 준비 +/-
+        + => 값이 1씩 증가
+        - => 값이 1씩 감소  (값이 0이면 더이상 감소 x )
+     -->
+
+     
+     <h1 id ="number">0</h1>
+     <div>
+         <button type = "button" id="p" onclick="up()">+</button>
+         <button type = "button" id="m" onclick="down()">-</button>
+         
+     </div>
+
+     <script>
+       
+       let result = document.getElementById('number');
+       let number=parseInt(result.innerText);
+
+       function up(){
+            number=number+1;
+            result.innerText=`${number}`;
+       }
+
+       function down(){
+        if(number>0){
+            number=number-1;
+            result.innerText=`${number}`;
+
+        }else{
+            result.innerText=`${number}`;
+        }
+       }
+
+       
+     </script>
+    
+</body>
+</html>

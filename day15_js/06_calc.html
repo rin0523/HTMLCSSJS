@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>계산기</title>
+</head>
+<body>
+    <div class="container"> 
+        <div class="area top">
+            <button type="button" value="7">7</button>
+            <button type="button" value="8">8</button>
+            <button type="button" value="9">9</button>
+            <button type="button" value="+">+</button>
+            <button type="button" value="c">c</button><br>
+            <button type="button" value="4">4</button>
+            <button type="button" value="5">5</button>
+            <button type="button" value="6">6</button>
+            <button type="button" value="-" >-</button><br>
+            <button type="button" value="1">1</button>
+            <button type="button" value="2">2</button>
+            <button type="button" value="3">3</button>
+            <button type="button" value="*">*</button><br>
+            <button type="button" value=".">.</button>
+            <button type="button" value="0">0</button>
+            <button type="button" value="=">=</button>
+            <button type="button" value="/">/</button>
+        </div>
+        <h3 id =result></h3>
+
+        <script>
+            document.querySelector('.container').addEventListener('click',(e)=>{
+                console.log(e.target.value);
+            });
+
+            let print=document.getElementById('print');
+            let result=''; 
+            let nums =0; // 숫자 선택 
+            let nums1=0;
+            let select='';
+            
+            
+            function cal(nums,select,nums1){
+               
+                if(e.target.value=='c'){
+                
+                    result='';
+
+                    
+                }else if(e.target.value=='='){
+
+                    e.target.value= Number(result,value)
+
+                }
+
+                switch(select){
+                    case '+': result=nums + nums1; break;
+                    case '-': result=nums - nums1 ; break;
+                    case '*' :result=nums * nums1; break;
+                    case '/' :result=nums / nums1; break;
+                    case '%': result=nums % nums1 ; break;
+                
+                }console.log(result);
+                document.getElementById('result').innerHTML=result;
+            }
+
+           
+        </script>
+    </div>
+</body>
+</html>

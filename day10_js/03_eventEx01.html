@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>성적확인</legend>
+
+            이름 : <input type="text" id="name"><br>
+            국어 : <input type="text" id = "kor"><br>
+            영어: <input type="text" id="eng"><br>
+            수학: <input type="text" id="math"><br>
+            <button type="button" onclick="clickEvent()">성적계산</button>
+
+        </fieldset>
+
+       
+    </form>
+    <!-- 이름: 합계: 평균:  -->
+    <h3 id="sum"> </h3>
+
+    <script>
+
+        function clickEvent(){
+            let name=document.getElementById('name').value;
+            let kor=document.getElementById('kor').value;
+            let eng=document.getElementById('eng').value;
+            let math=document.getElementById('math').value;
+            
+            let sum=Number(kor)+parseInt(eng)+parseInt(math);
+            let avg=Math.round (sum/3) ; //정수로 반올림 변환 
+
+            document.getElementById('sum').innerText=
+            `이름 : ${name}, 합계 : ${sum}, 평균:${avg}`;
+
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나이 구하기 </title>
+</head>
+<body>
+    이름 : <input type="text" id="name"><br>
+    주민번호 : <input type="text" id="rNum"><br>
+    <button type="button" onclick="info()">확인</button>
+
+    <h3 id="result">
+        <!-- 이름,생년월일, 성별 나이 출력  -->
+
+
+        
+    </h3>
+
+    <script>
+
+       
+      //000523-123456
+
+
+      //오늘날짜 리턴
+       let today= new Date();
+
+        function info(){
+            //주민등록번호
+            //(1900+98)980101-123456 => 1900년대생
+            //(2000+01)010101-345678 =>2000년대생
+            //기준 - 1/2 1900 3/4 2000
+
+
+            let name= document.getElementById("name").value;
+            let rNum= document.getElementById("rNum").value;
+            let birth=rNum.slice(0,6); 
+            //let birth=rNum.substring(0,rNum.indexof("-"))
+            //console.log(birth);
+            let id= rNum.charAt(rNum.indexOf("-")+1);
+            let sex= (id=="1" || id=="3" ? "남" : "여");
+            let generation=(id=="3" || id=="4") ? "20" :"19";
+            let gb=generation+birth.slice(0,2);
+            let age= today.getFullYear()-parseInt(gb);
+            
+
+           
+            console.log(name);
+            console.log(birth);
+            console.log(sex);
+            console.log(age);
+
+
+            document.getElementById('result').innerText=
+                `이름: ${name}, 생년월일: ${birth} , 성별 : ${sex} , 나이 : ${age}`;
+        }
+
+
+           
+        
+        
+
+
+    </script>
+
+</body>
+</html>
