@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>구구단 영역(2*1 ~9*9=81) 내에서 랜덤으로 문제를 내면 정답을 맞추는 로직</h1>
+    <ul>
+        <li>총 문제는 10문제 출제</li>
+        <li>문제를 풀 때 정답, 오답의 결과를 나타냄</li>
+        <li>총 10개의 문제 중 정답률을 출력</li>
+    </ul>
+    <h1>
+        <button type="button" id="startBtn">문제출제</button>
+    </h1>
+    <ol id="q"></ol>
+    <button type="button" id="compareBtn">정답확인</button>
+    <h3 id="printRatio"></h3>
+
+    
+</body>
+
+<script>
+   
+   function makeRandomDan(){
+    return Math.floor(Math.random()*8)+2; //2단부터 9단 
+
+   }
+
+   function makeRandomIncre(){
+    return Math.floor(Math.random()*9)+1; //1~9
+
+   }
+
+   let quizArea=document.getElementById('q');
+   const ansObj={}; //ans1:7 =>key:value 
+   let cnt=0;
+
+   document.getElementById('startBtn').addEventListener('click',()=>{
+
+    //문제가 출제되는 부분 
+
+    quizArea.innerHTML=``; //지난 문제 제거 
+
+    do{
+
+        cnt++; //1부터 시작 
+        let dan=makeRandomDan();
+        let incre=makeRandomIncre();
+        let answer=dan*incre;
+        ansObj[`ans${cnt}`]=answer; //obj에 추가(key value 들어가는 자리) ***
+        
+        //q영역에 뿌리기
+
+        let quiz=`<li>${dan}*${incre}= `;
+            quiz+=`<input type="text" id="userAns${cnt}"></li>`
+            quizArea.innerHTML+=quiz; 
+
+    }while(cnt<10);
+
+    console.log(ansObj);
+    cnt=0;
+
+   });
+
+   let correct=0; //정답 갯수
+
+   document.getElementById('compareBtn').addEventListener('click',()=>{
+
+    //정답이 나오는 부분
+
+    while(cnt<10){
+        cnt++;
+        let userInput=document.getElementById(`userAns${cnt}`); //각 번지의 사용자 정답
+        if(Number(userInput.value)===ansObj['ans${cnt}']){
+            correct ++;
+            userInput.value+=" : 정답 "
+            userInput.style.backgroundColor ="green";
+
+        }else{
+            userInput.value+=" : 오답";
+            userInput.style.backgroundColor="red";
+        }
+
+    }
+    document.getElementById('printRatio').innerText=
+    `정답률 : ${(correct/cnt).toFixed(2)*100}%`
+   });
+
+
+
+
+</script>
+</html>
