@@ -1,0 +1,96 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+
+    <style>
+
+        body{
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        h1,h2{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        h1{
+            font-weight: 700;
+
+        }
+
+
+        header{
+            text-align: center;
+
+        }
+
+        section{
+            text-align: center;
+        }
+
+        section article{
+            width:calc(100%/3);
+            float: left;
+        }
+
+        section ul{
+            margin-top: 0;
+            list-style: none;
+        }
+    </style>
+
+
+    <body>
+
+        <header></header>
+        <section></section>
+
+        <script>
+
+
+        fetch(`https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json`)
+         .then(resp =>resp.json())
+         .then(result =>{
+          title(result);
+          mem(result);
+          }) //성공시 
+         .catch(err => console.log(err)); //실패시 
+
+                                
+         function title(obj){
+
+         let header=document.querySelector('header');
+         header.innerHTML+=`<h1>${obj.squadName}</h1>`;
+         header.innerHTML+=`<p>hometown:${obj.homeTown} // Formed:${obj.formed} </p>` 
+
+        }
+
+          function mem(obj){
+          let section=document.querySelector('section');
+          let str='';
+
+          for(const members of obj.members){
+              str+=`<article>`;     
+              str+=`<h2>${members.name}</h2>`;
+              str+=`<p>Age:${members.age}</p>`;
+              str+=`<p>Secret Identity:${members.secretIdentity}</p>`;
+              str+=`<p>Superpowers</p>`; 
+              str+=`<ul>`
+              for(const power of members.powers){
+              str+=`<li>${power}</li>`
+                    }
+                  str+=`</ul>`;
+                  str+=`</article>`;
+                        }
+
+                 section.innerHTML=str;
+                    
+                    }
+
+            </script>
+        </body>
+        </html>
