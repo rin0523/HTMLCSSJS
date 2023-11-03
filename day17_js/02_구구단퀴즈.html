@@ -36,6 +36,10 @@
 
    let quizArea=document.getElementById('q');
    const ansObj={}; //ans1:7 =>key:value 
+   
+   //여기서 ansObj는 빈 객체(JavaScript의 객체)를 나타내며, 코드에서는 비어있는 객체를 생성하는 역할을 합니다. 
+   //객체는 키-값 쌍(key-value pairs)을 저장하는 데 사용되며, 여기서는 퀴즈 정답을 저장하기 위한 객체로 사용될 것으로 보입니다.
+   
    let cnt=0;
 
    document.getElementById('startBtn').addEventListener('click',()=>{
@@ -50,13 +54,14 @@
         let dan=makeRandomDan();
         let incre=makeRandomIncre();
         let answer=dan*incre;
-        ansObj[`ans${cnt}`]=answer; //obj에 추가(key value 들어가는 자리) ***
+        ansObj[`ans${cnt}`]=answer; //obj에 추가(key value 들어가는 자리) *** // 사용자 정답 저장값 
         
         //q영역에 뿌리기
 
         let quiz=`<li>${dan}*${incre}= `;
             quiz+=`<input type="text" id="userAns${cnt}"></li>`
             quizArea.innerHTML+=quiz; 
+
 
     }while(cnt<10);
 
@@ -85,10 +90,11 @@
         }
 
     }
+
+
     document.getElementById('printRatio').innerText=
     `정답률 : ${(correct/cnt).toFixed(2)*100}%`
    });
-
 
 
 
