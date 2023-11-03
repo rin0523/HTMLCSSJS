@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Travel</h1>
+    <ul>
+        <li class="home">Home</li>
+        <li class="seoul">Seoul</li>
+        <li class="tokyo">Tokyo</li>
+        <li class="paris">Paris</li>
+    </ul>
+    <div id="img">
+        <img src="../image/home이미지.jpg" alt="home">
+    </div>
+    <script>
+
+     const img=document.getElementById('img');
+     
+     document.addEventListener('click',(e)=>{
+        let classList=e.target.classList;
+        if(classList.contains('home')){
+           img.innerHTML= `<img src="../image/home이미지.jpg" alt="home">`;
+        }
+        
+        if(classList.contains('seoul')){
+           img.innerHTML= `<img src="../image/서울.jpg" alt="home">`;
+        }
+        if(classList.contains('tokyo')){
+           img.innerHTML= `<img src="../image/도쿄.jpg" alt="home">`;
+        }
+        if(classList.contains('paris')){
+           img.innerHTML= `<img src="../image/파리.jpg" alt="home">`;
+        }
+        
+     })
+
+
+    </script>
+</body>
+
+
+</html>

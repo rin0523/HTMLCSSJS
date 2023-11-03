@@ -1,0 +1,36 @@
+        /* 
+        margin : 10px; => 상하좌우 전체 여백
+        margin : 10px 20px; => 상하 좌우
+        margin : 10px 20px 50px; => 상 좌우 하
+        margin : 10px 20px 50px 10px; => 상 우 하 좌
+        */
+        body{
+            text-align: center;
+        }
+        h1{
+            border: 5px solid black;
+            /* height: 60px; */
+            width: 300px;
+            padding: 10px;
+            margin: 0 auto;
+        }
+        ul{
+            list-style: none;
+            padding: 0;
+            margin: 0 auto;
+            width: 300px;
+            padding: 10px;
+        }
+        li{
+            display: inline;
+            margin: 10px 10px;
+        }
+        a{
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+        img{
+            width: 50%;
+            height: 500px;
+        }
