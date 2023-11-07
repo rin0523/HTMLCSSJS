@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button type="button" id="ele">엘리먼트 만들기</button>
+    <div id ="div"></div>
+
+    <h2 id="h2"></h2>
+</body>
+
+<script>
+
+    const div=document.getElementById('div');
+    
+    document.getElementById('ele').addEventListener('click',()=>{
+        //생성된 버튼 추가
+        div.innerHTML=`
+        <button type="button" id="btn" onclick="sent()">생성된 버튼</button>`;
+    }); 
+
+    function sent(){
+        h2.innerHTML=`생성된 버튼을 클릭함.`;
+    }
+
+    
+
+    
+</script>
+</html>
