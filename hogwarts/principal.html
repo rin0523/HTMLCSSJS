@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <style>
+        @import url(hg_css/common.css);
+        /* 복사해서 본인 css 붙여넣기 */
+/* 필수 css Header+Footer+mid 크기 */
+@font-face {
+    font-family: 'HarryPoterFont';
+    src: url(/font/HarryPoter-na_lover.ttf) format('truetype');
+}
+
+​
+/* 사이드 메뉴 */
+.mid{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    border: 1px solid red;
+}
+.side-menu{
+    width: 15%;
+    min-width: 280px;
+    height: 100vh;
+    display: absolute;
+    overflow: auto;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid green;
+}
+.a-ul{
+    flex-wrap: nowrap;
+    margin: 30px;
+    text-align: center;
+}
+.a-ul h1{
+    font-family: 'HarryPoterFont';
+}   
+.a-ul hr{
+    margin-top: 20px;
+    margin-bottom: 15px; 
+}
+.a-li{
+    margin-bottom: 15px; 
+    list-style: none;
+    font-size:larger;
+}
+.main{ /* width/-min-width/height만 통일 나머지는 개인의 디자인에 맞춰서 */
+    width: 85%;
+    min-width: 1500px;
+    height: 100vh;
+
+}
+/* 사이드 메뉴 여기까지 */
+
+
+#side-menu{
+    background-color:black;
+    width: 300px;
+    height: 100%;
+}
+
+
+.menu1{
+    font-size: 30px;
+    color:beige;
+}
+
+.school{
+    font-size:40px;
+    color:beige;
+    list-style: none;
+}
+
+
+ li a { /*위에 상단 메뉴바랑 겹침 수정하면 깨짐 */
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+li a.active {
+background-color: #4CAF50;
+color: white;
+}
+li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+#hello{
+width: 100%;
+height: 100px;
+background-color: brown;
+font-size: 50px;
+color:beige;
+}
+
+
+
+#art1 img{/*덤블도어 연설 영상 넣기*/
+width: 500px;
+height:100%;
+background-repeat:no-repeat;
+}
+
+#art2{
+width: 1000px;
+height:100%;
+font-size: 20px;
+/* margin-left: 100px; */
+
+}
+
+#bigbox{
+display: flex;
+height:90%;
+background-color: brown; 
+}
+
+
+
+    </style>
+</head>
+
+
+
+<body>
+    <!-- 필수 Header 영역 -->
+    <header>
+        <div id="homeLogo"><img src="image/hogwartSimbol.png" alt="hogwartSimbol" id="simbol"></div>
+        <div id="logo">Hogwarts</div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">SCHOOL</a></li>
+                <li><a href="#">DORMITORY</a></li>
+                <li><a href="#">CLUB</a></li>
+                <li><a href="#">NOTICE</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 필수 Header 끝 -->
+
+
+    
+    <!-- 변경 영역 시작 -->
+    
+    <section class="mid">
+        
+        <div id="side-menu">
+            <ul>
+                <li class="school">School</li><hr>
+                <li><a href="principal.html" class="menu1" >the principal's greeting</a></li>
+                <li><a href="professor.html" class="menu1">Professorships</a></li>
+                <li><a href="campus.html" class="menu1">Campus</a></li>
+        </ul>
+    </div>
+
+        <div class="main"> 
+            <article id="hello">Presidential greetings</article>
+            <div id="bigbox">
+                <article id="art1"><img src="image/덤블도어2.jpg" alt="" height="100%"></article> 
+                <article id="art2"> 
+                   <h2>
+                    "Hogwarts combines pioneering expertise in online learning with over 350 years of experience in residential pedagogy. By sharing Harvard’s ideas with the world we help define the future of education.”
+                    - Bharat Anand, Vice Provost for Advances in Learning
+                    Hogwart Online brings learners an extensive catalog of courses built on global expertise and research. Curated series of courses combine faculty and disciplines from across the University to extend learning opportunities.
+                    
+                    Each course was developed by Hogwart’s Office of the Vice Provost for Advances in Learning (VPAL). 
+                    Parkes has been an engaged university citizen, serving on committees and tasks forces dealing with Harvard’s Allston campus development, the future of libraries, transportation, and strategic planning. He has also co-led and helped stand up several initiatives. These include the master’s degree program in Data Science and the Summer Program for Undergraduates in Data Science.
+                </h2>
+                </article>
+            </div>
+
+            
+        </div>
+
+
+    </section>
+    <!-- 변경 영역 끝 -->
+
+
+
+
+    <!-- 필수 Footer 시작 -->
+    <footer>
+        <a href="#"><img src="image/squiz.png" alt="squiz" id="squiz"></a>
+        <a href="#"><img src="image/broom.png" alt="broom" id="broom"></a>
+        <a href="#"><img src="image/head.png" alt="head" id="head"></a>
+    </footer>
+    <!-- 필수 Footer 끝 -->
+</body>
+</html>

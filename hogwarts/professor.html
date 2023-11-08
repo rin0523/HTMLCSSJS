@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>professor</title>
+    <style>
+        @import url(hg_css/common.css);
+        /* 복사해서 본인 css 붙여넣기 */
+/* 필수 css Header+Footer+mid 크기 */
+@font-face {
+    font-family: 'HarryPoterFont';
+    src: url(/font/HarryPoter-na_lover.ttf) format('truetype');
+}
+
+​
+/* 사이드 메뉴 */
+.mid{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    border: 1px solid red;
+}
+.side-menu{
+    width: 15%;
+    min-width: 280px;
+    height: 100vh;
+    display: absolute;
+    overflow: auto;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid green;
+}
+.a-ul{
+    flex-wrap: nowrap;
+    margin: 30px;
+    text-align: center;
+}
+.a-ul h1{
+    font-family: 'HarryPoterFont';
+}   
+.a-ul hr{
+    margin-top: 20px;
+    margin-bottom: 15px; 
+}
+.a-li{
+    margin-bottom: 15px; 
+    list-style: none;
+    font-size:larger;
+}
+.main{ /* width/-min-width/height만 통일 나머지는 개인의 디자인에 맞춰서 */
+    width: 85%;
+    min-width: 1500px;
+    height: 100vh;
+}
+/* 사이드 메뉴 여기까지 */
+
+
+#side-menu{
+    background-color:black;
+    width: 300px;
+    height: 100%;
+}
+
+
+.menu1{
+    font-size: 30px;
+    color:beige;
+}
+
+.school{
+    font-size:40px;
+    color:beige;
+    list-style: none;
+}
+
+
+ li a { /*위에 상단 메뉴바랑 겹침 수정하면 깨짐 */
+display: block;
+color: #000;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+li a.active {
+background-color: #4CAF50;
+color: white;
+}
+li a:hover:not(.active) {
+background-color: #555;
+color: white;
+}
+
+
+
+#bg img {
+  width: 100%;
+  height: 970px;
+  object-fit: cover;
+}
+
+.main2{
+    background-image: url(image/𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝_\ @𝙻𝚊𝚒𝚕𝚊𝚑𝚃_.jpg);
+}
+
+
+    </style>
+</head>
+
+
+<body>
+    <!-- 필요 부분 복사해서 mid 부분 채워넣기 -->
+    <!-- 필수 Header 영역 -->
+    <header>
+        <div id="homeLogo"><img src="image/hogwartSimbol.png" alt="hogwartSimbol" id="simbol"></div>
+        <div id="logo">Hogwarts</div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">SCHOOL</a></li>
+                <li><a href="#">DORMITORY</a></li>
+                <li><a href="#">CLUB</a></li>
+                <li><a href="#">NOTICE</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 필수 Header 끝 -->
+    <!-- 변경 영역 시작 -->
+    <section class="mid">
+        <div id="side-menu">
+            <ul>
+                <li class="school">School</li><hr>
+                <li><a href="principal.html" class="menu1" >the principal's greeting</a></li>
+                <li><a href="professor.html" class="menu1">Professorships</a></li>
+                <li><a href="campus.html" class="menu1">Campus</a></li>
+        </ul>
+    </div>
+
+        <main class="main2">
+            <div id="bg"><img src="image/𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝_ @𝙻𝚊𝚒𝚕𝚊𝚑𝚃_.jpg" alt=""></div>
+             <article id="intro">Intro Professor</article>
+
+        </main>
+    </section>
+    <!-- 변경 영역 끝 -->
+
+
+    <!-- 필수 Footer 시작 -->
+    <footer>
+        <a href="#"><img src="image/squiz.png" alt="squiz" id="squiz"></a>
+        <a href="#"><img src="image/broom.png" alt="broom" id="broom"></a>
+        <a href="#"><img src="image/head.png" alt="head" id="head"></a>
+    </footer>
+    <!-- 필수 Footer 끝 -->
+</body>
+</html>
