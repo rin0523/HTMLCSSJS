@@ -79,21 +79,21 @@
 }
 
 
- li a { /*위에 상단 메뉴바랑 겹침 수정하면 깨짐 */
+#side-menu  li a { /*위에 상단 메뉴바랑 겹침 수정하면 깨짐 */
 display: block;
-color: #000;
+color: beige;
 padding: 8px 16px;
 text-decoration: none;
 }
 
-li a.active {
-background-color: #4CAF50;
-color: white;
+#side-menu li a:hover {
+    background-color: #555;
+    color: white;
+   
 }
-li a:hover:not(.active) {
-background-color: #555;
-color: white;
-}
+
+
+
 
 #hello{
 width: 100%;
@@ -107,7 +107,7 @@ color:beige;
 
 #art1 img{
 width: 600px;
-height:90%;
+height:80%;
 background-repeat:no-repeat;
 }
 
@@ -125,8 +125,116 @@ height:90%;
 background-color: black; 
 }
 
+#art2  h1{
+    font-size: 40px;
+    color:beige;
+
+}
+
 #art2 h2{
+    
     color: beige;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+    margin-top: 300px;
+    margin-left: 300px;
+}
+
+h1 span {
+    font-family: serif;
+    font-size: 80px;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    /*  폰트가 부드러워지게 설정  */
+    -webkit-font-smoothing: antialiased;
+    /*  x축, y축, 블러 설정  */
+    text-shadow: 0 1px 0 #ccc, 
+                 0 2px 0 #ccc, 
+                 0 3px 0 #ccc,  
+                 0 4px 0 #ccc, 
+                 0 5px 0 #ccc, 
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0,0,0,0.4);
+    animation: bounce 0.3s ease infinite alternate;
+}
+h1 span:nth-child(2){animation-delay: 0.1s;}
+h1 span:nth-child(3){animation-delay: 0.2s;}
+h1 span:nth-child(4){animation-delay: 0.3s;}
+h1 span:nth-child(5){animation-delay: 0.4s;}
+h1 span:nth-child(6){animation-delay: 0.5s;}
+h1 span:nth-child(7){animation-delay: 0.6s;}
+h1 span:nth-child(8){animation-delay: 0.7s;}
+  
+  
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc,
+                     0 1px 0 #ccc,
+                     0 3px 0 #ccc,
+                     0 4px 0 #ccc,
+                     0 5px 0 #ccc,
+                     0 6px 0 transparent,
+                     0 7px 0 transparent,
+                     0 8px 0 transparent,
+                     0 9px 0 transparent,
+                     0 50px 20px rgba(0,0,0,0.4);
+    }
+}
+
+h2 span {
+    font-family: serif;
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    /*  폰트가 부드러워지게 설정  */
+    -webkit-font-smoothing: antialiased;
+    /*  x축, y축, 블러 설정  */
+    text-shadow: 0 1px 0 #ccc, 
+                 0 2px 0 #ccc, 
+                 0 3px 0 #ccc,  
+                 0 4px 0 #ccc, 
+                 0 5px 0 #ccc, 
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0,0,0,0.4);
+    animation: bounce 0.3s ease infinite alternate;
+}
+h2 span:nth-child(2){animation-delay: 0.1s;}
+h2 span:nth-child(3){animation-delay: 0.2s;}
+h2 span:nth-child(4){animation-delay: 0.3s;}
+h2 span:nth-child(5){animation-delay: 0.4s;}
+h2 span:nth-child(6){animation-delay: 0.5s;}
+h2 span:nth-child(7){animation-delay: 0.6s;}
+h2 span:nth-child(8){animation-delay: 0.7s;}
+  
+  
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc,
+                     0 1px 0 #ccc,
+                     0 3px 0 #ccc,
+                     0 4px 0 #ccc,
+                     0 5px 0 #ccc,
+                     0 6px 0 transparent,
+                     0 7px 0 transparent,
+                     0 8px 0 transparent,
+                     0 9px 0 transparent,
+                     0 50px 20px rgba(0,0,0,0.4);
+    }
 }
 
 
@@ -170,17 +278,18 @@ background-color: black;
         <div class="main"> 
             <article id="hello">Presidential greetings</article>
             <div id="bigbox">
-                <article id="art1"><img src="image/dumbil.gif" alt="" height="100%"></article> 
+                <article id="art1"><img src="image/덤블도어입장.gif" alt="" height="100%"></article> 
                 <article id="art2"> 
+                   <h1><span>D</span><span>u</span><span>m</span><span>b</span><span>l</span><span>e</span><span>d</span><span>o</span><span>r</span><span>e</span></h1> 
                    <h2>
-                    "Hogwarts combines pioneering expertise in online learning with over 350 years of experience in residential pedagogy. By sharing Harvard’s ideas with the world we help define the future of education.”
-                    - Bharat Anand, Vice Provost for Advances in Learning
-                    Hogwart Online brings learners an extensive catalog of courses built on global expertise and research. Curated series of courses combine faculty and disciplines from across the University to extend learning opportunities.
+                    "<span>H</span>ogwa<span>r</span>ts co<span>m</span>bin<span>e</span>s pio<span>n</span>ee<span>r</span>ing e<span>x</span>perti<span>s</span>se in online learning with over 350 years of experience in residential pedagogy. By <span>s</span>haring H<span>o</span>gwart's ideas with <span>t</span>he world we help define the future of education.”
+                    - Bharat Anand, Vice <span>P</span>rovost for Advances in <span>L</span>earn<span>i</span>ng
+                    <span>H</span>ogwar<span>t</span> Online bri<span>g</span>s learners an extensive <span>c</span>atalog of courses <span>b</span>uilt on global exper<span>t</span>ise and research. Curated series of courses combine faculty and disciplines from across the University to extend learning opportunities.
                     
-                    Each course was developed by Hogwart’s Office of the Vice Provost for Advances in Learning (VPAL). 
-                    Parkes has been an engaged university citizen, serving on committees and tasks forces dealing with Harvard’s Allston campus development, the future of libraries, transportation, and strategic planning. He has also co-led and helped stand up several initiatives. These include the master’s degree program in Data Science and the Summer Program for Undergraduates in Data Science.
-                </h2>
-                </article>
+                    Each <span>c</span>ourse was developed by <span>H</span>ogwart’s Office of th<span>e</span> Vice Provost for Advances in Lear<span>n</span>ing (VPAL). 
+                    Parkes has been an engaged un<span>i</span>versity citizen, <span>s</span>erving on committees a<span>n</span>d tasks forces dealing with <span>H</span>ogwart’s All<span>s</span>ton campus development.
+                </h2> </article>
+                <article id="logo"><img src="image/hogwartSimbol.png" alt="" id="logo"></article>
             </div>
 
             

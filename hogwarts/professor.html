@@ -79,21 +79,26 @@
 }
 
 
- li a { /*위에 상단 메뉴바랑 겹침 수정하면 깨짐 */
+#side-menu  li a { /*위에 상단 메뉴바랑 겹침 수정하면 깨짐 */
 display: block;
-color: #000;
+color: beige;
 padding: 8px 16px;
 text-decoration: none;
 }
 
-li a.active {
-background-color: #4CAF50;
-color: white;
+#side-menu li a:hover {
+    background-color: #555;
+    color: white;
+   
 }
-li a:hover:not(.active) {
-background-color: #555;
-color: white;
+
+
+.profes {
+    border-radius: 10px; 
+
+  
 }
+
 
 #intro{
 width: 100%;
@@ -101,6 +106,195 @@ height: 80px;
 background-color: black;
 font-size: 50px;
 color:beige;
+}
+
+#bigbox3{
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+
+#p1:hover{
+    background-color:brown;
+}
+
+#p1{
+
+    background-color: #555;
+    width: 300px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+#p1 h2{
+    font-size: 20px;
+}
+
+#p1 img{
+    width: 300px;
+    height: 220px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+#p2:hover{
+    background-color: rgb(3, 72, 3);
+}
+
+#p2{
+
+background-color:#555;
+width: 300px;
+height: 350px;
+margin-top: 50px;
+
+}
+
+#p2 h2{
+font-size: 20px;
+}
+
+#p2 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+#p3:hover{
+  background-color: rgb(23, 66, 151) ;
+}
+
+
+
+#p3{
+
+background-color: #555;
+width: 300px;
+height: 350px;
+margin-top: 50px;
+margin-left: 200px;
+
+}
+
+#p3 h2{
+font-size: 20px;
+}
+
+#p3 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+
+#bigbox4{
+
+    display: flex;
+    height: 450px;
+    width: 100%;
+}
+
+#p4:hover{
+    background-color:beige;
+    color:#555
+}
+
+
+#p4{
+
+background-color:  rgb(79, 81, 84);
+width: 300px;
+height: 350px;
+margin-top: 60px;
+margin-left: 100px;
+margin-right: 200px;
+
+}
+
+#p4 h2{
+font-size: 20px;
+
+}
+
+#p4 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+#p5:hover{
+    background-color: rgb(23, 66, 151);
+}
+
+#p5{
+
+background-color:  rgb(79, 81, 84);
+width: 300px;
+height: 350px;
+margin-top: 50px;
+
+}
+
+#p5 h2{
+font-size: 20px;
+}
+
+#p5 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+#p6:hover{
+    background-color: rgb(212, 212, 45) ;
+}
+
+
+#p6{
+
+background-color: rgb(79, 81, 84);
+width: 300px;
+height: 350px;
+margin-top: 50px;
+margin-left: 200px;
+
+}
+
+#p6 h2{
+font-size: 20px;
+}
+
+#p6 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+.profes {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  color: #fff;
+  text-align: center;
+  line-height: 20px;
+  cursor: pointer;
+  animation: spin 2s linear infinite; /* 계속 회전하는 애니메이션 설정 */
+}
+
+.profes:hover {
+  animation-play-state: paused; /* hover 상태에서 애니메이션 일시정지 */
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 
@@ -142,8 +336,53 @@ color:beige;
 
         <main class="main2">
             <article id="intro">Professorships</article>
-            <div id="bigbox1"><img src="image/𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝_ @𝙻𝚊𝚒𝚕𝚊𝚑𝚃_.jpg" alt=""></div>
-            <div></div>
+            <div id="bigbox3">
+                
+                <div id="p1" class="profes">
+                    <img src="image/pic1.jpg" alt="">
+                       <h2>Name : Minerva McGonagal <br>
+                           Subject :shapeshifter <br> 
+                           Dormitory : Gryffindor </h2></div>
+                <div id="p2" class="profes" >
+                    <img src="image/pic2.jpg" alt="">
+                    <h2>Name : Severus Snape <br>
+                        Subject :potion <br> 
+                        Dormitory :Slytherin </h2>
+                </div>
+                   
+                <div id="p3" class="profes">
+                    <img src="image/pic3l.jpg" alt="">
+                    <h2>Name : Filius Flitwick  <br>
+                        Subject : Charms <br> 
+                        Dormitory :Ravenclaw </h2>
+                </div>
+            </div>
+
+            <div id="bigbox4">
+                
+                <div id="p4"class="profes">
+                    <img src="image/pic4.jpg" alt="">
+                    <h2>Name : Alastor Moody <br>
+                        Subject : Defense <br> 
+                        Dormitory :? </h2>
+
+                </div>
+                <div id="p5"class="profes">
+                    <img src="image/pic5.jpg" alt="">
+                    <h2>Name :Quirinus Quirrell <br>
+                        Subject : Defense <br> 
+                        Dormitory :Ravenclaw </h2>
+                </div>
+                <div id="p6" class="profes">
+                    <img src="image/pic6.jpg" alt="">
+                    <h2>Name :Pomona Sprout <br>
+                        Subject : Herbolgy <br> 
+                        Dormitory :Hufflepuff </h2>
+
+                </div>
+            </div>
+            </div>
+            
             
 
         </main>
