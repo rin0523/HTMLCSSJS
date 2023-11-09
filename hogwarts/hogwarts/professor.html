@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>professor</title>
+    <style>
+        @import url(hg_css/common.css);
+        /* 복사해서 본인 css 붙여넣기 */
+/* 필수 css Header+Footer+mid 크기 */
+@font-face {
+    font-family: 'HarryPoterFont';
+    src: url(/font/HarryPoter-na_lover.ttf) format('truetype');
+}
+
+​
+/* 사이드 메뉴 */
+.mid{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    position: relative;
+    border: 1px solid red;
+}
+.side-menu{
+    width: 15%;
+    min-width: 280px;
+    height: 100vh;
+    display: absolute;
+    overflow: auto;
+    text-align: center;
+    justify-content: center;
+    border: 1px solid green;
+}
+.a-ul{
+    flex-wrap: nowrap;
+    margin: 30px;
+    text-align: center;
+}
+.a-ul h1{
+    font-family: 'HarryPoterFont';
+}   
+.a-ul hr{
+    margin-top: 20px;
+    margin-bottom: 15px; 
+}
+.a-li{
+    margin-bottom: 15px; 
+    list-style: none;
+    font-size:larger;
+}
+.main2{ /* width/-min-width/height만 통일 나머지는 개인의 디자인에 맞춰서 */
+    width: 85%;
+    min-width: 1500px;
+    height: 100vh;
+    background-image: url(image/𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝_\ @𝙻𝚊𝚒𝚕𝚊𝚑𝚃_.jpg);
+}
+/* 사이드 메뉴 여기까지 */
+
+
+#side-menu{
+    background-color:black;
+    width: 300px;
+    height: 100%;
+}
+
+
+.menu1{
+    font-size: 30px;
+    color:beige;
+}
+
+.school{
+    font-size:40px;
+    color:beige;
+    list-style: none;
+}
+
+
+#side-menu  li a { /*위에 상단 메뉴바랑 겹침 수정하면 깨짐 */
+display: block;
+color: beige;
+padding: 8px 16px;
+text-decoration: none;
+}
+
+#side-menu li a:hover {
+    background-color: #555;
+    color: white;
+   
+}
+
+
+.profes {
+    border-radius: 10px; 
+
+  
+}
+
+
+
+
+
+
+
+#intro{
+width: 100%;
+height: 80px;
+background-color: black;
+font-size: 50px;
+color:beige;
+}
+
+#bigbox3{
+    display: flex;
+    height: 400px;
+    width: 100%;
+}
+
+#p1:hover{
+    background-color:brown;
+}
+
+#p1{
+
+    background-color: #555;
+    width: 300px;
+    height: 350px;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 200px;
+}
+
+#p1 h2{
+    font-size: 20px;
+}
+
+#p1 img{
+    width: 300px;
+    height: 220px;
+    border-top-left-radius: 10px; 
+    border-top-right-radius: 10px; 
+}
+
+#p2:hover{
+    background-color: rgb(3, 72, 3);
+}
+
+#p2{
+
+background-color:#555;
+width: 300px;
+height: 350px;
+margin-top: 50px;
+
+}
+
+#p2 h2{
+font-size: 20px;
+}
+
+#p2 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+#p3:hover{
+  background-color: rgb(23, 66, 151) ;
+}
+
+
+
+#p3{
+
+background-color: #555;
+width: 300px;
+height: 350px;
+margin-top: 50px;
+margin-left: 200px;
+
+}
+
+#p3 h2{
+font-size: 20px;
+}
+
+#p3 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+
+#bigbox4{
+
+    display: flex;
+    height: 450px;
+    width: 100%;
+}
+
+#p4:hover{
+    background-color:beige;
+    color:#555
+}
+
+
+#p4{
+
+background-color:  rgb(79, 81, 84);
+width: 300px;
+height: 350px;
+margin-top: 60px;
+margin-left: 100px;
+margin-right: 200px;
+
+}
+
+#p4 h2{
+font-size: 20px;
+
+}
+
+#p4 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+#p5:hover{
+    background-color: rgb(23, 66, 151);
+}
+
+#p5{
+
+background-color:  rgb(79, 81, 84);
+width: 300px;
+height: 350px;
+margin-top: 50px;
+
+}
+
+#p5 h2{
+font-size: 20px;
+}
+
+#p5 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+#p6:hover{
+    background-color: rgb(212, 212, 45) ;
+}
+
+
+#p6{
+
+background-color: rgb(79, 81, 84);
+width: 300px;
+height: 350px;
+margin-top: 50px;
+margin-left: 200px;
+
+}
+
+#p6 h2{
+font-size: 20px;
+}
+
+#p6 img{
+width: 300px;
+height: 220px;
+border-top-left-radius: 10px; 
+border-top-right-radius: 10px; 
+}
+
+
+
+    </style>
+</head>
+
+
+<body>
+    <!-- 필요 부분 복사해서 mid 부분 채워넣기 -->
+    <!-- 필수 Header 영역 -->
+    <header>
+        <div id="homeLogo"><img src="image/hogwartSimbol.png" alt="hogwartSimbol" id="simbol"></div>
+        <div id="logo">Hogwarts</div>
+        <div id="menu">
+            <ul>
+                <li><a href="#">SCHOOL</a></li>
+                <li><a href="#">DORMITORY</a></li>
+                <li><a href="#">CLUB</a></li>
+                <li><a href="#">NOTICE</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- 필수 Header 끝 -->
+    <!-- 변경 영역 시작 -->
+    <section class="mid">
+        <div id="side-menu">
+            <ul>
+                <li class="school">School</li><hr>
+                <li><a href="principal.html" class="menu1" >the principal's greeting</a></li>
+                <li><a href="professor.html" class="menu1">Professorships</a></li>
+                <li><a href="campus.html" class="menu1">Campus</a></li>
+        </ul>
+    </div>
+
+        <main class="main2">
+            <article id="intro">Professorships</article>
+            <div id="bigbox3">
+                
+                <div id="p1" class="profes">
+                    <img src="image/pic1.jpg" alt="">
+                       <h2>Name : Minerva McGonagal <br>
+                           Subject :shapeshifter <br> 
+                           Dormitory : Gryffindor </h2></div>
+                <div id="p2" class="profes" >
+                    <img src="image/pic2.jpg" alt="">
+                    <h2>Name : Severus Snape <br>
+                        Subject :potion <br> 
+                        Dormitory :Slytherin </h2>
+                </div>
+                   
+                <div id="p3" class="profes">
+                    <img src="image/pic3l.jpg" alt="">
+                    <h2>Name : Filius Flitwick  <br>
+                        Subject : Charms <br> 
+                        Dormitory :Ravenclaw </h2>
+                </div>
+            </div>
+
+            <div id="bigbox4">
+                
+                <div id="p4"class="profes">
+                    <img src="image/pic4.jpg" alt="">
+                    <h2>Name : Alastor Moody <br>
+                        Subject : Defense <br> 
+                        Dormitory :? </h2>
+
+                </div>
+                <div id="p5"class="profes">
+                    <img src="image/pic5.jpg" alt="">
+                    <h2>Name :Quirinus Quirrell <br>
+                        Subject : Defense <br> 
+                        Dormitory :Ravenclaw </h2>
+                </div>
+                <div id="p6" class="profes">
+                    <img src="image/pic6.jpg" alt="">
+                    <h2>Name :Pomona Sprout <br>
+                        Subject : Herbolgy <br> 
+                        Dormitory :Hufflepuff </h2>
+
+                </div>
+            </div>
+            </div>
+            
+            
+
+        </main>
+    </section>
+    <!-- 변경 영역 끝 -->
+
+
+    <!-- 필수 Footer 시작 -->
+    <footer>
+        <a href="#"><img src="image/squiz.png" alt="squiz" id="squiz"></a>
+        <a href="#"><img src="image/broom.png" alt="broom" id="broom"></a>
+        <a href="#"><img src="image/head.png" alt="head" id="head"></a>
+    </footer>
+    <!-- 필수 Footer 끝 -->
+</body>
+</html>
