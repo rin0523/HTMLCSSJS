@@ -58,6 +58,7 @@
     min-width: 1500px;
     height: 100vh;
     background-color: black;
+    background-image: url(image/오래된\ 신문.jpg);
     
  
 }
@@ -68,6 +69,7 @@
     background-color:black;
     width: 300px;
     height: 100%;
+    font-family: 'HarryPoterFont';
 }
 
 
@@ -101,21 +103,15 @@ text-decoration: none;
 #campus{
 width: 100%;
 height: 80px;
-background-color: black;
 font-size: 50px;
+background-color: black;
 color:beige;
-}
-
-
-
-#video img{
-    margin-top: 30px;
-    margin-left: 50px;
-    margin-right:50px;
-    width: 1200px;
-    height: 500px;
+font-family: 'HarryPoterFont';
 
 }
+
+
+
 
 #titleinfo {
     color: bisque;
@@ -133,34 +129,187 @@ color:beige;
 
 }
 
-#bigbox2{
+#bigbox5{
+ 
+    height: 200px;
+    width: 1350px;
     display: flex;
-    width: 90%;
+    
 }
 
 #art3 h2{
     width: 700px;
-    color: bisque;
+    color: rgb(48, 47, 47);
+    margin-left: 35px;
 }
 
 #art4 h2{
     width: 700px;
-    color: bisque;
+    color: rgb(48, 47, 47);
 
 }
-#art4 i{
-    color: white;
-    font-size: 50px ;
+
+
+#art6 button {
+    border: none; /* 테두리 없애기 */
+    background-color: none;
+    opacity: 0.3;
+    color: black;
+    font-size: 10px;
+    margin-left: 150px;
+    font-weight: bold;
+    border-radius: 50%;
 }
 
-#art4 i:hover{
-    color:brown
+#iconButton{
+    background-color: none;
 }
 
 
+#bigbox5{
+    display: flex;
+    height: 150px;
+    width: 1300px;
+}
 
 
+#art5 img{
+    margin-bottom: 50%;
+    height: 450px;
+    width: 600px;
+    margin-left: 40px;
+}
 
+#bigbox6{
+    display: flex;
+    justify-content:space-between ;
+}
+
+#art6{
+    margin-right: 350px;
+    width: 550px;
+    height:450px;
+    background-image: url(image/신청서.jpg);
+    border-radius: 20px; /* 원하는 둥근 정도로 설정하세요. */
+}
+
+
+h1 span {
+    font-family: serif;
+    font-size: 80px;
+    color: black;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    /*  폰트가 부드러워지게 설정  */
+    -webkit-font-smoothing: antialiased;
+    /*  x축, y축, 블러 설정  */
+    text-shadow: 0 1px 0 #ccc, 
+                 0 2px 0 #ccc, 
+                 0 3px 0 #ccc,  
+                 0 4px 0 #ccc, 
+                 0 5px 0 #ccc, 
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0,0,0,0.4);
+    animation: bounce 0.3s ease infinite alternate;
+}
+h1 span:nth-child(2){animation-delay: 0.1s;}
+h1 span:nth-child(3){animation-delay: 0.2s;}
+h1 span:nth-child(4){animation-delay: 0.3s;}
+h1 span:nth-child(5){animation-delay: 0.4s;}
+h1 span:nth-child(6){animation-delay: 0.5s;}
+h1 span:nth-child(7){animation-delay: 0.6s;}
+h1 span:nth-child(8){animation-delay: 0.7s;}
+  
+  
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc,
+                     0 1px 0 #ccc,
+                     0 3px 0 #ccc,
+                     0 4px 0 #ccc,
+                     0 5px 0 #ccc,
+                     0 6px 0 transparent,
+                     0 7px 0 transparent,
+                     0 8px 0 transparent,
+                     0 9px 0 transparent,
+                     0 50px 20px rgba(0,0,0,0.4);
+    }
+}
+
+h2 span {
+    font-family: serif;
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    top: 20px;
+    display: inline-block;
+    /*  폰트가 부드러워지게 설정  */
+    -webkit-font-smoothing: antialiased;
+    /*  x축, y축, 블러 설정  */
+    text-shadow: 0 1px 0 #ccc, 
+                 0 2px 0 #ccc, 
+                 0 3px 0 #ccc,  
+                 0 4px 0 #ccc, 
+                 0 5px 0 #ccc, 
+                 0 6px 0 transparent,
+                 0 7px 0 transparent,
+                 0 8px 0 transparent,
+                 0 9px 0 transparent,
+                 0 10px 10px rgba(0,0,0,0.4);
+    animation: bounce 0.3s ease infinite alternate;
+}
+h2 span:nth-child(2){animation-delay: 0.1s;}
+h2 span:nth-child(3){animation-delay: 0.2s;}
+h2 span:nth-child(4){animation-delay: 0.3s;}
+h2 span:nth-child(5){animation-delay: 0.4s;}
+h2 span:nth-child(6){animation-delay: 0.5s;}
+h2 span:nth-child(7){animation-delay: 0.6s;}
+h2 span:nth-child(8){animation-delay: 0.7s;}
+  
+  
+@keyframes bounce {
+    100% {
+        top: -20px;
+        text-shadow: 0 1px 0 #ccc,
+                     0 1px 0 #ccc,
+                     0 3px 0 #ccc,
+                     0 4px 0 #ccc,
+                     0 5px 0 #ccc,
+                     0 6px 0 transparent,
+                     0 7px 0 transparent,
+                     0 8px 0 transparent,
+                     0 9px 0 transparent,
+                     0 50px 20px rgba(0,0,0,0.4);
+    }
+}
+
+
+#name, #age, #num, #add, #date, #date2 {
+    opacity: 0.7; /* 원하는 투명도로 설정하세요. 1이 완전 불투명, 0이 완전 투명입니다. */
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="search"] {
+    border: none;
+    border-radius: 20px; /* 원하는 라운드 처리 값을 지정합니다. */
+    padding: 10px; /* 내용과 테두리 사이의 간격을 조정합니다. */
+    outline: none; /* 포커스 효과를 제거합니다. */
+}
+
+#art6 h3{
+    font-family: 'HarryPoterFont';
+    font-size: 30px;
+    
+}
+
+#art6 h2{
+    font-size: 20px;
+    font-family: 'HarryPoterFont';
+}
 
     </style>
 </head>
@@ -195,21 +344,37 @@ color:beige;
 
         <main class="main3">
         <article id="campus">Campus</article>
-        <article id="titleinfo"><h1>Visiting Hogwart</h1></article>
-        <div id="bigbox2">
+        <article id="titleinfo"><h1><span>V</span><span>i</span><span>s</span><span>i</span><span>t</span><span>i</span><span>n</span><span>g</span> <span>H</span><span>o</span><span>g</span><span>w</span><span>a</span><span>r</span><span>t</span></h1></article>
+        <div id="bigbox5">
             <div id="art3"><h2>From in-person and private tours, <br>to mobile and virtual options, <br> you can get to know Hogwart from anywhere.</h2></div>
-            <div id="art4"><h2>Learn more about tours and visiting campus</h2><i class="bi bi-arrow-right-circle"></i></div>
+            <div id="art4"><h2>Learn more about tours and visiting campus</h2></div>
         </div>
 
 
-        <article id="video"><img src="image/campus.gif" alt=""></article>
-        </article>
-        
+        <div id="bigbox6">
+            <article id="art5">
+                <img src="image/map.jpg" alt="">
+            </article>
+            <article id="art6"><h3>November Campus Tour Application</h3><br><hr>
+                <h2>Name : <input type="text" id="name"><br><hr>Age: <input type="text" id="age"><br><hr>Phone Number : <input type="text" id="num"><br><hr>
+                    Address: <input type="text" id="add"><br><hr>
+                    <form action="">
+                        Desired date : 
+                        <input type="checkbox" name="date" id="date" value="date">
+                        <label for="date">11.17</label>
+                        <label for="date">
+                            <input type="checkbox" name="date1" id="date2" value="date2">
+                           11.24
+                        </label>
+                        <button id="iconButton" class="bi bi-arrow-right-circle" style="font-size: 50px; font-weight: bold; color:black;"></button></h2>
 
-
-
+            </article>
+        </div>
         </main>
     </section>
+
+
+
     <!-- 변경 영역 끝 -->
     <!-- 필수 Footer 시작 -->
     <footer>
@@ -219,4 +384,19 @@ color:beige;
     </footer>
     <!-- 필수 Footer 끝 -->
 </body>
+
+<script>
+    // 버튼 클릭 이벤트 처리
+    document.getElementById("iconButton").addEventListener("click", function() {
+        // 클릭 시 실행할 동작 추가
+        alert("신청이 완료되었습니다. 부가적인 문의사항은 연락바랍니다.");
+    });
+
+
+   
+
+
+</script>
+
+
 </html>

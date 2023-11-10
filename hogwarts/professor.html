@@ -55,7 +55,7 @@
     width: 85%;
     min-width: 1500px;
     height: 100vh;
-    background-image: url(image/𝚙𝚒𝚗𝚝𝚎𝚛𝚎𝚜𝚝_\ @𝙻𝚊𝚒𝚕𝚊𝚑𝚃_.jpg);
+    background-image: url(image/신청서.jpg);
 }
 /* 사이드 메뉴 여기까지 */
 
@@ -70,12 +70,14 @@
 .menu1{
     font-size: 30px;
     color:beige;
+    font-family: 'HarryPoterFont';
 }
 
 .school{
     font-size:40px;
     color:beige;
     list-style: none;
+    font-family: 'HarryPoterFont';
 }
 
 
@@ -106,21 +108,37 @@ height: 80px;
 background-color: black;
 font-size: 50px;
 color:beige;
+font-family: 'HarryPoterFont';
 }
 
-#bigbox3{
+#bigbox3 {
     display: flex;
     height: 400px;
     width: 100%;
+    position: relative; /* 추가: 상대적인 위치 설정 */
 }
+
+#bigbox4 {
+    display: flex;
+    height: 450px;
+    width: 100%;
+    position: relative; /* 추가: 상대적인 위치 설정 */
+}
+
+
+
+/*
+.profes background color 설정해놓고 폰트 통일해야됨. */
+
 
 #p1:hover{
     background-color:brown;
 }
 
-#p1{
 
-    background-color: #555;
+
+
+#p1{
     width: 300px;
     height: 350px;
     margin-top: 50px;
@@ -145,7 +163,6 @@ color:beige;
 
 #p2{
 
-background-color:#555;
 width: 300px;
 height: 350px;
 margin-top: 50px;
@@ -171,7 +188,6 @@ border-top-right-radius: 10px;
 
 #p3{
 
-background-color: #555;
 width: 300px;
 height: 350px;
 margin-top: 50px;
@@ -206,7 +222,6 @@ border-top-right-radius: 10px;
 
 #p4{
 
-background-color:  rgb(79, 81, 84);
 width: 300px;
 height: 350px;
 margin-top: 60px;
@@ -233,7 +248,7 @@ border-top-right-radius: 10px;
 
 #p5{
 
-background-color:  rgb(79, 81, 84);
+
 width: 300px;
 height: 350px;
 margin-top: 50px;
@@ -258,7 +273,6 @@ border-top-right-radius: 10px;
 
 #p6{
 
-background-color: rgb(79, 81, 84);
 width: 300px;
 height: 350px;
 margin-top: 50px;
@@ -277,27 +291,51 @@ border-top-left-radius: 10px;
 border-top-right-radius: 10px; 
 }
 
-.profes {
-  width: 100px;
-  height: 100px;
-  background-color: #3498db;
-  color: #fff;
-  text-align: center;
-  line-height: 20px;
-  cursor: pointer;
-  animation: spin 2s linear infinite; /* 계속 회전하는 애니메이션 설정 */
+
+#p1 img:hover { /*클릭하면 현일님 기숙사 소개란으로 a태그 할까*/
+    transform: scale(1.2); /* 호버 시 상자 크기 확대 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    position: relative; /* 컨테이너 내에 유지될 수 있도록 설정 */
+    z-index: 1; /* 호버된 상자를 다른 요소 위로 배치 */
 }
 
-.profes:hover {
-  animation-play-state: paused; /* hover 상태에서 애니메이션 일시정지 */
+#p2 img:hover { /*클릭하면 현일님 기숙사 소개란으로 a태그 할까*/
+    transform: scale(1.2); /* 호버 시 상자 크기 확대 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    position: relative; /* 컨테이너 내에 유지될 수 있도록 설정 */
+    z-index: 1; /* 호버된 상자를 다른 요소 위로 배치 */
 }
 
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+#p3 img:hover { /*클릭하면 현일님 기숙사 소개란으로 a태그 할까*/
+    transform: scale(1.2); /* 호버 시 상자 크기 확대 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    position: relative; /* 컨테이너 내에 유지될 수 있도록 설정 */
+    z-index: 1; /* 호버된 상자를 다른 요소 위로 배치 */
 }
 
 
+#p4 img:hover { /*클릭하면 현일님 기숙사 소개란으로 a태그 할까*/
+    transform: scale(1.2); /* 호버 시 상자 크기 확대 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    position: relative; /* 컨테이너 내에 유지될 수 있도록 설정 */
+    z-index: 1; /* 호버된 상자를 다른 요소 위로 배치 */
+}
+
+
+#p5 img:hover { /*클릭하면 현일님 기숙사 소개란으로 a태그 할까*/
+    transform: scale(1.2); /* 호버 시 상자 크기 확대 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    position: relative; /* 컨테이너 내에 유지될 수 있도록 설정 */
+    z-index: 1; /* 호버된 상자를 다른 요소 위로 배치 */
+}
+
+
+#p6 img:hover { /*클릭하면 현일님 기숙사 소개란으로 a태그 할까*/
+    transform: scale(1.2); /* 호버 시 상자 크기 확대 */
+    margin: 0 auto; /* 수평 가운데 정렬 */
+    position: relative; /* 컨테이너 내에 유지될 수 있도록 설정 */
+    z-index: 1; /* 호버된 상자를 다른 요소 위로 배치 */
+}
 
 
 
@@ -339,19 +377,19 @@ border-top-right-radius: 10px;
             <div id="bigbox3">
                 
                 <div id="p1" class="profes">
-                    <img src="image/pic1.jpg" alt="">
+                    <img src="image/p1교수.gif" alt="">
                        <h2>Name : Minerva McGonagal <br>
                            Subject :shapeshifter <br> 
                            Dormitory : Gryffindor </h2></div>
                 <div id="p2" class="profes" >
-                    <img src="image/pic2.jpg" alt="">
+                    <img src="image/p2교수.gif" alt="">
                     <h2>Name : Severus Snape <br>
                         Subject :potion <br> 
                         Dormitory :Slytherin </h2>
                 </div>
                    
                 <div id="p3" class="profes">
-                    <img src="image/pic3l.jpg" alt="">
+                    <img src="image/p3교수.gif" alt="">
                     <h2>Name : Filius Flitwick  <br>
                         Subject : Charms <br> 
                         Dormitory :Ravenclaw </h2>
@@ -361,22 +399,22 @@ border-top-right-radius: 10px;
             <div id="bigbox4">
                 
                 <div id="p4"class="profes">
-                    <img src="image/pic4.jpg" alt="">
+                    <img src="image/p4교수.gif" alt="">
                     <h2>Name : Alastor Moody <br>
                         Subject : Defense <br> 
                         Dormitory :? </h2>
 
                 </div>
                 <div id="p5"class="profes">
-                    <img src="image/pic5.jpg" alt="">
+                    <img src="image/p5교수.gif" alt="">
                     <h2>Name :Quirinus Quirrell <br>
                         Subject : Defense <br> 
                         Dormitory :Ravenclaw </h2>
                 </div>
                 <div id="p6" class="profes">
-                    <img src="image/pic6.jpg" alt="">
+                    <img src="image/p6교수.gif" alt="">
                     <h2>Name :Pomona Sprout <br>
-                        Subject : Herbolgy <br> 
+                        Subject : Herbolgy<br> 
                         Dormitory :Hufflepuff </h2>
 
                 </div>

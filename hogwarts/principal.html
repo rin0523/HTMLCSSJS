@@ -55,6 +55,7 @@
     width: 85%;
     min-width: 1500px;
     height: 100vh;
+    background-color: black;
 
 }
 /* 사이드 메뉴 여기까지 */
@@ -64,12 +65,14 @@
     background-color:black;
     width: 300px;
     height: 100%;
+    font-family: 'HarryPoterFont';
 }
 
 
 .menu1{
     font-size: 30px;
     color:beige;
+    font-family: 'HarryPoterFont';
 }
 
 .school{
@@ -101,14 +104,14 @@ height: 100px;
 background-color: black;
 font-size: 50px;
 color:beige;
+font-family: 'HarryPoterFont';
 }
 
 
 
 #art1 img{
-width: 600px;
-height:80%;
-background-repeat:no-repeat;
+    width: 1400px;
+    height:250px;
 }
 
 #art2{
@@ -120,9 +123,10 @@ font-size: 20px;
 }
 
 #bigbox{
-display: flex;
-height:90%;
-background-color: black; 
+background-color: black;
+    width: 800px;
+    min-width: 1500px;
+    height: 800px;
 }
 
 #art2  h1{
@@ -139,8 +143,8 @@ background-color: black;
 #logo {
     width: 200px;
     height: 200px;
-    margin-top: 300px;
-    margin-left: 300px;
+    margin-top: 250px;
+    margin-left: 400px;
 }
 
 h1 span {
@@ -237,6 +241,47 @@ h2 span:nth-child(8){animation-delay: 0.7s;}
     }
 }
 
+.Slidesbackground {
+    margin: 0;
+    padding: 0;
+
+}
+.slideshow-image{
+    border-radius:3%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.mySlides {
+    border-radius:3%;
+    width: 600px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
+}
+
+.slideshow-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: auto;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
 
 
     </style>
@@ -278,16 +323,16 @@ h2 span:nth-child(8){animation-delay: 0.7s;}
         <div class="main"> 
             <article id="hello">Presidential greetings</article>
             <div id="bigbox">
-                <article id="art1"><img src="image/덤블도어입장.gif" alt="" height="100%"></article> 
+                <article id="art1"><img src="image/덤블연설.gif" alt="" height="100%"></article> 
+                <article id="logo"><img src="image/hogwartSimbol.png" alt="" id="logo"></article>
                 <article id="art2"> 
                    <h1><span>D</span><span>u</span><span>m</span><span>b</span><span>l</span><span>e</span><span>d</span><span>o</span><span>r</span><span>e</span></h1> 
                    <h2>
-                    "<span>H</span>ogwa<span>r</span>ts co<span>m</span>bin<span>e</span>s pio<span>n</span>ee<span>r</span>ing e<span>x</span>perti<span>s</span>se in online learning with over 350 years of experience in residential pedagogy. By <span>s</span>haring H<span>o</span>gwart's ideas with <span>t</span>he world we help define the future of education.”
+                    "<span>H</span>ogwa<span>r</span>ts co<span>m</span>bin<span>e</span>s pio<span>n</span>ee<span>r</span>ing e<span>x</span>perti<span>s</span>se in online learning with over <span>3</span><span>5</span><span>0</span> years of expe<span>r</span>ience in reside<span>n</span>tial pedagogy. By <span>s</span>haring H<span>o</span>gwart's ideas with <span>t</span>he world we help <span>d</span>efine the f<span>u</span>ture of ed<span>u</span>cation.”
                     - Bharat Anand, Vice <span>P</span>rovost for Advances in <span>L</span>earn<span>i</span>ng
-                    <span>H</span>ogwar<span>t</span> Online bri<span>g</span>s learners an extensive <span>c</span>atalog of courses <span>b</span>uilt on global exper<span>t</span>ise and research. Curated series of courses combine faculty and disciplines from across the University to extend learning opportunities.
+                    <span>H</span>ogwar<span>t</span> Online bri<span>g</span>s lear<span>n</span>ers an ext<span>e</span>nsive <span>c</span>atalog of courses <span>b</span>uilt on global exper<span>t</span>ise and research. Cura<span>t</span>ed series of courses c<span>o</span>mbine faculty and disc<span>i</span>plines from across the Un<span>i</span>versity to extend <span>l</span>earning o<span>p</span>portun<span>i</span>ties.
                     
-                    Each <span>c</span>ourse was developed by <span>H</span>ogwart’s Office of th<span>e</span> Vice Provost for Advances in Lear<span>n</span>ing (VPAL). 
-                    Parkes has been an engaged un<span>i</span>versity citizen, <span>s</span>erving on committees a<span>n</span>d tasks forces dealing with <span>H</span>ogwart’s All<span>s</span>ton campus development.
+                    Each <span>c</span>ourse was devel<span>o</span>ped by <span>H</span>ogwart’s Office of th<span>e</span> Vice Provost for Adv<span>a</span>nces in Lear<span>n</span>ing (VPAL).
                 </h2> </article>
                 <article id="logo"><img src="image/hogwartSimbol.png" alt="" id="logo"></article>
             </div>
@@ -310,4 +355,25 @@ h2 span:nth-child(8){animation-delay: 0.7s;}
     </footer>
     <!-- 필수 Footer 끝 -->
 </body>
+
+<script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        var i;
+        var slides = document.getElementsByClassName("mySlides");
+       
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1
+        }
+        slides[slideIndex - 1].style.display = "block";
+    
+        setTimeout(showSlides, 2000); // 2초마다 이미지가 체인지됩니다
+    }
+</script>
 </html>
