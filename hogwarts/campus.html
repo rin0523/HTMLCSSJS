@@ -185,14 +185,13 @@ font-family: 'HarryPoterFont';
     justify-content:space-between ;
 }
 
-#art6{
+#art6 {
     margin-right: 350px;
     width: 550px;
-    height:450px;
+    height: 450px;
     background-image: url(image/신청서.jpg);
-    border-radius: 20px; /* 원하는 둥근 정도로 설정하세요. */
+    border-radius: 20px;
 }
-
 
 h1 span {
     font-family: serif;
@@ -303,13 +302,16 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
 #art6 h3{
     font-family: 'HarryPoterFont';
     font-size: 30px;
+    color: antiquewhite;
     
 }
 
 #art6 h2{
     font-size: 20px;
     font-family: 'HarryPoterFont';
+    color:antiquewhite
 }
+
 
     </style>
 </head>
@@ -347,7 +349,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
         <article id="titleinfo"><h1><span>V</span><span>i</span><span>s</span><span>i</span><span>t</span><span>i</span><span>n</span><span>g</span> <span>H</span><span>o</span><span>g</span><span>w</span><span>a</span><span>r</span><span>t</span></h1></article>
         <div id="bigbox5">
             <div id="art3"><h2>From in-person and private tours, <br>to mobile and virtual options, <br> you can get to know Hogwart from anywhere.</h2></div>
-            <div id="art4"><h2>Learn more about tours and visiting campus</h2></div>
+            <div id="art4"><h2>Learn more about tours and visiting campus.<br>Please fill out the application form below.</h2></div>
         </div>
 
 
@@ -371,6 +373,7 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
             </article>
         </div>
         </main>
+        
     </section>
 
 
@@ -386,14 +389,40 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
 </body>
 
 <script>
-    // 버튼 클릭 이벤트 처리
-    document.getElementById("iconButton").addEventListener("click", function() {
-        // 클릭 시 실행할 동작 추가
-        alert("신청이 완료되었습니다. 부가적인 문의사항은 연락바랍니다.");
-    });
+
+document.getElementById("iconButton").addEventListener("click", function (event) {
+    // 클릭 시 기본 동작 막기
+    event.preventDefault();
+
+    // art6 요소 가져오기
+    var art6 = document.getElementById("art6");
+
+    // 클릭 시 실행할 동작 추가
+    alert("신청이 완료되었습니다. 부가적인 문의사항은 연락바랍니다.");
+
+    // 일정 시간이 지난 후에 배경 이미지 변경
+    setTimeout(function () {
+        // art6에 있는 모든 텍스트를 숨기거나 제거
+        var textElements = art6.querySelectorAll("h2, h3");
+        for (var i = 0; i < textElements.length; i++) {
+            textElements[i].style.display = "none"; // 또는 textElements[i].remove();
+        }
+        
+        // art6에 투명도 효과 주기 (임시적인 애니메이션을 위해)
+        art6.style.transition = "background 0.5s ease-out";
+        art6.style.backgroundImage = "url('image/편지.jpg')";
+        art6.style.backgroundSize = "contain"; // 또는 "contain"으로 설정
+        art6.style.backgroundRepeat = "no-repeat";
+
+        // art6의 크기를 유지
+        art6.style.width = "550px";
+        art6.style.height = "450px";
+
+    }, 500); // 0.5초(500밀리초) 후에 실행
+});
 
 
-   
+
 
 
 </script>

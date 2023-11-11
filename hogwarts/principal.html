@@ -56,6 +56,7 @@
     min-width: 1500px;
     height: 100vh;
     background-color: black;
+    background-image: url(image/신청서.jpg);
 
 }
 /* 사이드 메뉴 여기까지 */
@@ -82,7 +83,7 @@
 }
 
 
-#side-menu  li a { /*위에 상단 메뉴바랑 겹침 수정하면 깨짐 */
+#side-menu  li a { 
 display: block;
 color: beige;
 padding: 8px 16px;
@@ -95,9 +96,6 @@ text-decoration: none;
    
 }
 
-
-
-
 #hello{
 width: 100%;
 height: 100px;
@@ -107,50 +105,70 @@ color:beige;
 font-family: 'HarryPoterFont';
 }
 
-
-
-#art1 img{
-    width: 1400px;
-    height:250px;
-}
-
-#art2{
-width: 1000px;
-height:100%;
-font-size: 20px;
-/* margin-left: 100px; */
-
-}
-
 #bigbox{
-background-color: black;
-    width: 800px;
     min-width: 1500px;
     height: 800px;
+    position: relative; /* 추가: 상대적 위치 지정 */
+    overflow: hidden; /* 추가: 내용이 넘칠 때 숨기기 */
 }
 
-#art2  h1{
+#art1{ 
+
+width: 60%;
+height:800px;
+font-size: 20px;
+margin-left: 100px;
+
+
+}
+
+#art1  h1{
     font-size: 40px;
-    color:beige;
+    color:black;
 
 }
 
-#art2 h2{
-    
-    color: beige;
+#art1 h2{
+    color: black;
 }
 
-#logo {
-    width: 200px;
-    height: 200px;
-    margin-top: 250px;
-    margin-left: 400px;
+
+#art2{
+    position: absolute; /* 추가: 절대적 위치 지정 */
+    top: 10px; /* 추가: 상단 여백 조절 */
+    right: 50px; /* 추가: 우측 여백 조절 */
+    width: 400px;
+    height: 800px;
+
 }
+
+#dumbul img{
+    margin-top: 50px;
+    height: 350px;
+    width: 340px;
+    border-radius: 50%;
+}
+
+#logo img {
+    right: 5px;
+    width: 250px;
+    height: 250px;
+    top: 350px;
+
+  
+  
+}
+
+
+
+
+
+
 
 h1 span {
     font-family: serif;
     font-size: 80px;
-    color: #fff;
+    color: black;
     position: relative;
     top: 20px;
     display: inline-block;
@@ -196,8 +214,8 @@ h1 span:nth-child(8){animation-delay: 0.7s;}
 
 h2 span {
     font-family: serif;
-    font-size: 40px;
-    color: #fff;
+    font-size: 50px;
+    color: black;
     position: relative;
     top: 20px;
     display: inline-block;
@@ -323,18 +341,20 @@ h2 span:nth-child(8){animation-delay: 0.7s;}
         <div class="main"> 
             <article id="hello">Presidential greetings</article>
             <div id="bigbox">
-                <article id="art1"><img src="image/덤블연설.gif" alt="" height="100%"></article> 
-                <article id="logo"><img src="image/hogwartSimbol.png" alt="" id="logo"></article>
-                <article id="art2"> 
-                   <h1><span>D</span><span>u</span><span>m</span><span>b</span><span>l</span><span>e</span><span>d</span><span>o</span><span>r</span><span>e</span></h1> 
-                   <h2>
-                    "<span>H</span>ogwa<span>r</span>ts co<span>m</span>bin<span>e</span>s pio<span>n</span>ee<span>r</span>ing e<span>x</span>perti<span>s</span>se in online learning with over <span>3</span><span>5</span><span>0</span> years of expe<span>r</span>ience in reside<span>n</span>tial pedagogy. By <span>s</span>haring H<span>o</span>gwart's ideas with <span>t</span>he world we help <span>d</span>efine the f<span>u</span>ture of ed<span>u</span>cation.”
-                    - Bharat Anand, Vice <span>P</span>rovost for Advances in <span>L</span>earn<span>i</span>ng
-                    <span>H</span>ogwar<span>t</span> Online bri<span>g</span>s lear<span>n</span>ers an ext<span>e</span>nsive <span>c</span>atalog of courses <span>b</span>uilt on global exper<span>t</span>ise and research. Cura<span>t</span>ed series of courses c<span>o</span>mbine faculty and disc<span>i</span>plines from across the Un<span>i</span>versity to extend <span>l</span>earning o<span>p</span>portun<span>i</span>ties.
-                    
-                    Each <span>c</span>ourse was devel<span>o</span>ped by <span>H</span>ogwart’s Office of th<span>e</span> Vice Provost for Adv<span>a</span>nces in Lear<span>n</span>ing (VPAL).
-                </h2> </article>
-                <article id="logo"><img src="image/hogwartSimbol.png" alt="" id="logo"></article>
+                <article id="art1"> 
+                    <h1><span>D</span><span>u</span><span>m</span><span>b</span><span>l</span><span>e</span><span>d</span><span>o</span><span>r</span><span>e</span></h1> 
+                    <h2>
+                        "<span>H</span>ogwa<span>r</span>ts co<span>m</span>bin<span>e</span>s pio<span>n</span>ee<span>r</span>ing e<span>x</span>perti<span>s</span>se in online learning with over <span>3</span><span>5</span><span>0</span> years of expe<span>r</span>ience in reside<span>n</span>tial pedagogy. By <span>s</span>haring H<span>o</span>gwart's ideas with <span>t</span>he world we help <span>d</span>efine the f<span>u</span>ture of ed<span>u</span>cation.”
+                        - Bharat Anand, Vice <span>P</span>rovost for Advances in <span>L</span>earn<span>i</span>ng
+                        <span>H</span>ogwar<span>t</span> Online bri<span>g</span>s lear<span>n</span>ers an ext<span>e</span>nsive <span>c</span>atalog of courses <span>b</span>uilt on global exper<span>t</span>ise and research. Cura<span>t</span>ed series of courses c<span>o</span>mbine faculty and disc<span>i</span>plines from across the Un<span>i</span>versity to extend <span>l</span>earning o<span>p</span>portun<span>i</span>ties.
+                        
+                        Each <span>c</span>ourse was devel<span>o</span>ped by <span>H</span>ogwart’s Office of th<span>e</span> Vice Provost for Adv<span>a</span>nces in Lear<span>n</span>ing (VPAL).
+                    </h2> </article>
+                    <article id="art2">
+                        <article id="dumbul" ><img src="image/덤블연설.gif" alt="" ></article> 
+                        <article id="logo"><img src="image/hogwartSimbol.png" alt="" id="logo"></article>
+                    </article>
+              
             </div>
 
             
