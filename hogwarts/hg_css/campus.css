@@ -1,16 +1,8 @@
-.main3{ /* width/-min-width/height만 통일 나머지는 개인의 디자인에 맞춰서 */
-    width: 85%;
-    min-width: 1500px;
-    height: 100vh;
-    background-color: black;
-    background-image: url(image/오래된\ 신문.jpg);
-    
- 
+
+
+.main{
+    background-image: url(../image/오래된\ 신문.jpg);
 }
-
-/*main의 배경때문에 불러옴 */
-
-
 
 #side-menu{
     background-color:black;
@@ -59,7 +51,7 @@ font-family: 'HarryPoterFont';
 
 
 
-#titleinfo {/*..? */
+#titleinfo {
     color: bisque;
     width: 480px;
     height: 100px;
@@ -148,7 +140,7 @@ font-family: 'HarryPoterFont';
     margin-right:100px; /* 오른쪽으로 50px 이동 */
     width: 500px;
     height: 500px;
-    background-image: url('image/신청서.jpg');
+    background-image: url('../image/신청서.jpg');
     border-radius: 20px;
     display: flex;
     flex-direction: column;
@@ -229,4 +221,3 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
     font-family: 'HarryPoterFont';
     color:antiquewhite
 }
-

@@ -1,3 +1,11 @@
+
+
+.main{
+    background-image: url(../image/신청서.jpg);
+
+}
+
+
 #side-menu{
     background-color:black;
     width: 300px;
@@ -63,9 +71,7 @@ font-family: 'HarryPoterFont';
 }
 
 
-
-/*
-.profes background color 설정해놓고 폰트 통일해야됨. */
+/* .profes background color 설정해놓고 폰트 통일해야됨. */
 
 
 #p1:hover{
@@ -78,6 +84,7 @@ font-family: 'HarryPoterFont';
     margin-top: 50px;
     margin-left: 100px;
     margin-right: 200px;
+    background-color: #555;
 }
 
 #p1 h2{
@@ -101,6 +108,7 @@ font-family: 'HarryPoterFont';
 width: 300px;
 height: 350px;
 margin-top: 50px;
+background-color: #555;
 
 }
 
@@ -128,6 +136,7 @@ width: 300px;
 height: 350px;
 margin-top: 50px;
 margin-left: 200px;
+background-color: #555;
 
 }
 
@@ -164,6 +173,7 @@ height: 350px;
 margin-top: 60px;
 margin-left: 100px;
 margin-right: 200px;
+background-color: #555;
 
 }
 
@@ -190,6 +200,7 @@ border-top-right-radius: 10px;
 width: 300px;
 height: 350px;
 margin-top: 50px;
+background-color: #555;
 
 }
 
@@ -216,6 +227,7 @@ width: 300px;
 height: 350px;
 margin-top: 50px;
 margin-left: 200px;
+background-color: #555;
 
 }
 

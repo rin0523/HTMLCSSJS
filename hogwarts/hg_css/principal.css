@@ -1,21 +1,16 @@
-.main{ /* width/-min-width/height만 통일 나머지는 개인의 디자인에 맞춰서 */
-    width: 85%;
-    min-width: 1500px;
-    height: 100vh;
-    background-image: url(image/배경.png);
 
+.main{
+    background-image: url(../image/배경.png);
 }
-
-/*main 배경때문에 불러옴 */
 
 #side-menu{
-    background-color:black;
-    width: 300px;
-    height: 100%;
-    font-family: 'HarryPoterFont';
+background-color:black;
+width: 300px;
+height: 100%;
+font-family: 'HarryPoterFont';
 }
 
-#side-menu  li a { 
+#side-menu  li a { /*사이드 메뉴 효과 */
 display: block;
 color: beige;
 padding: 8px 16px;
@@ -23,21 +18,21 @@ text-decoration: none;
 }
 
 #side-menu li a:hover {
-    background-color: #555;
-    color: white;
-   
+background-color: #555;
+color: white;
+
 }
 
 .menu1{
-    font-size: 30px;
-    color:beige;
-    font-family: 'HarryPoterFont';
+font-size: 30px;
+color:beige;
+font-family: 'HarryPoterFont';
 }
 
 .school{
-    font-size:40px;
-    color:beige;
-    list-style: none;
+font-size:40px;
+color:beige;
+list-style: none;
 }
 
 
@@ -54,10 +49,11 @@ font-family: 'HarryPoterFont';
 }
 
 #bigbox{
-    min-width: 1500px;
-    height: 800px;
-    position: relative; /* 추가: 상대적 위치 지정 */
-    overflow: hidden; /* 추가: 내용이 넘칠 때 숨기기 */
+min-width: 1500px;
+height: 800px;
+position: relative; /* 추가: 상대적 위치 지정 */
+overflow: hidden; /* 추가: 내용이 넘칠 때 숨기기 */
+
 }
 
 #art1{ 
@@ -71,55 +67,55 @@ margin-left: 100px;
 }
 
 #art1  h1{
-    font-family: 'HarryPoterFont';
-    font-size: 40px;
-    color:beige;
+font-family: 'HarryPoterFont';
+font-size: 40px;
+color:beige;
 
 }
 
 #art1 h2{
-    font-family: 'HarryPoterFont';
-    color: beige;
+font-family: 'HarryPoterFont';
+color: beige;
 }
 
 
 #art2{
-    position: absolute; /* 추가: 절대적 위치 지정 */
-    top: 100px; /* 추가: 상단 여백 조절 */
-    right: 50px; /* 추가: 우측 여백 조절 */
-    width: 400px;
-    height: 800px;
+position: absolute; /* 추가: 절대적 위치 지정 */
+top: 100px; /* 추가: 상단 여백 조절 */
+right: 50px; /* 추가: 우측 여백 조절 */
+width: 400px;
+height: 800px;
 
 }
 
 #dumbul img {
-    margin-top: 150px;
-    width: 350px; /* 조절 가능한 값 */
-    height: 550px; /* 조절 가능한 값 */
-    border-radius: 50%;
+margin-top: 150px;
+width: 350px; /* 조절 가능한 값 */
+height: 550px; /* 조절 가능한 값 */
+border-radius: 50%;
 }
 
 h1 span {/*교장 인사말 글자 움직이는 기능 */
-    font-family: serif;
-    font-size: 80px;
-    color: beige;
-    position: relative;
-    top: 20px;
-    display: inline-block;
-    /*  폰트가 부드러워지게 설정  */
-    -webkit-font-smoothing: antialiased;
-    /*  x축, y축, 블러 설정  */
-    text-shadow: 0 1px 0 #ccc, 
-                 0 2px 0 #ccc, 
-                 0 3px 0 #ccc,  
-                 0 4px 0 #ccc, 
-                 0 5px 0 #ccc, 
-                 0 6px 0 transparent,
-                 0 7px 0 transparent,
-                 0 8px 0 transparent,
-                 0 9px 0 transparent,
-                 0 10px 10px rgba(0,0,0,0.4);
-    animation: bounce 0.3s ease infinite alternate;
+font-family: serif;
+font-size: 80px;
+color: beige;
+position: relative;
+top: 20px;
+display: inline-block;
+/*  폰트가 부드러워지게 설정  */
+-webkit-font-smoothing: antialiased;
+/*  x축, y축, 블러 설정  */
+text-shadow: 0 1px 0 #ccc, 
+         0 2px 0 #ccc, 
+         0 3px 0 #ccc,  
+         0 4px 0 #ccc, 
+         0 5px 0 #ccc, 
+         0 6px 0 transparent,
+         0 7px 0 transparent,
+         0 8px 0 transparent,
+         0 9px 0 transparent,
+         0 10px 10px rgba(0,0,0,0.4);
+animation: bounce 0.3s ease infinite alternate;
 }
 h1 span:nth-child(2){animation-delay: 0.1s;}
 h1 span:nth-child(3){animation-delay: 0.2s;}
@@ -128,45 +124,45 @@ h1 span:nth-child(5){animation-delay: 0.4s;}
 h1 span:nth-child(6){animation-delay: 0.5s;}
 h1 span:nth-child(7){animation-delay: 0.6s;}
 h1 span:nth-child(8){animation-delay: 0.7s;}
-  
-  
+
+
 @keyframes bounce {
-    100% {
-        top: -20px;
-        text-shadow: 0 1px 0 #ccc,
-                     0 1px 0 #ccc,
-                     0 3px 0 #ccc,
-                     0 4px 0 #ccc,
-                     0 5px 0 #ccc,
-                     0 6px 0 transparent,
-                     0 7px 0 transparent,
-                     0 8px 0 transparent,
-                     0 9px 0 transparent,
-                     0 50px 20px rgba(0,0,0,0.4);
-    }
+100% {
+top: -20px;
+text-shadow: 0 1px 0 #ccc,
+             0 1px 0 #ccc,
+             0 3px 0 #ccc,
+             0 4px 0 #ccc,
+             0 5px 0 #ccc,
+             0 6px 0 transparent,
+             0 7px 0 transparent,
+             0 8px 0 transparent,
+             0 9px 0 transparent,
+             0 50px 20px rgba(0,0,0,0.4);
+}
 }
 
 h2 span {
-    font-family: serif;
-    font-size: 50px;
-    color: beige;
-    position: relative;
-    top: 20px;
-    display: inline-block;
-    /*  폰트가 부드러워지게 설정  */
-    -webkit-font-smoothing: antialiased;
-    /*  x축, y축, 블러 설정  */
-    text-shadow: 0 1px 0 #ccc, 
-                 0 2px 0 #ccc, 
-                 0 3px 0 #ccc,  
-                 0 4px 0 #ccc, 
-                 0 5px 0 #ccc, 
-                 0 6px 0 transparent,
-                 0 7px 0 transparent,
-                 0 8px 0 transparent,
-                 0 9px 0 transparent,
-                 0 10px 10px rgba(0,0,0,0.4);
-    animation: bounce 0.3s ease infinite alternate;
+font-family: serif;
+font-size: 50px;
+color: beige;
+position: relative;
+top: 20px;
+display: inline-block;
+/*  폰트가 부드러워지게 설정  */
+-webkit-font-smoothing: antialiased;
+/*  x축, y축, 블러 설정  */
+text-shadow: 0 1px 0 #ccc, 
+         0 2px 0 #ccc, 
+         0 3px 0 #ccc,  
+         0 4px 0 #ccc, 
+         0 5px 0 #ccc, 
+         0 6px 0 transparent,
+         0 7px 0 transparent,
+         0 8px 0 transparent,
+         0 9px 0 transparent,
+         0 10px 10px rgba(0,0,0,0.4);
+animation: bounce 0.3s ease infinite alternate;
 }
 h2 span:nth-child(2){animation-delay: 0.1s;}
 h2 span:nth-child(3){animation-delay: 0.2s;}
@@ -175,20 +171,20 @@ h2 span:nth-child(5){animation-delay: 0.4s;}
 h2 span:nth-child(6){animation-delay: 0.5s;}
 h2 span:nth-child(7){animation-delay: 0.6s;}
 h2 span:nth-child(8){animation-delay: 0.7s;}
-  
-  
+
+
 @keyframes bounce {
-    100% {
-        top: -20px;
-        text-shadow: 0 1px 0 #ccc,
-                     0 1px 0 #ccc,
-                     0 3px 0 #ccc,
-                     0 4px 0 #ccc,
-                     0 5px 0 #ccc,
-                     0 6px 0 transparent,
-                     0 7px 0 transparent,
-                     0 8px 0 transparent,
-                     0 9px 0 transparent,
-                     0 50px 20px rgba(0,0,0,0.4);
-    }
+100% {
+top: -20px;
+text-shadow: 0 1px 0 #ccc,
+             0 1px 0 #ccc,
+             0 3px 0 #ccc,
+             0 4px 0 #ccc,
+             0 5px 0 #ccc,
+             0 6px 0 transparent,
+             0 7px 0 transparent,
+             0 8px 0 transparent,
+             0 9px 0 transparent,
+             0 50px 20px rgba(0,0,0,0.4);
+}
 }
