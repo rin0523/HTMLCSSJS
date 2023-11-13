@@ -95,6 +95,8 @@ text-decoration: none;
    
 }
 
+/*여기까지 사이드 메뉴 hover 기능*/
+
 #hello{
 width: 100%;
 height: 100px;
@@ -122,12 +124,14 @@ margin-left: 100px;
 }
 
 #art1  h1{
+    font-family: 'HarryPoterFont';
     font-size: 40px;
     color:beige;
 
 }
 
 #art1 h2{
+    font-family: 'HarryPoterFont';
     color: beige;
 }
 
@@ -141,23 +145,14 @@ margin-left: 100px;
 
 }
 
-#dumbul img{
-    margin-top:150px;
-    height: 300px;
-    width: 300px;
+#dumbul img {
+    margin-top: 150px;
+    width: 350px; /* 조절 가능한 값 */
+    height: 550px; /* 조절 가능한 값 */
     border-radius: 50%;
 }
 
-#logo img {
-    right: 5px;
-    width: 200px;
-    height: 200px;
-    top: 450px;
-}
-
-
-
-h1 span {
+h1 span {/*교장 인사말 글자 움직이는 기능 */
     font-family: serif;
     font-size: 80px;
     color: beige;
@@ -251,49 +246,6 @@ h2 span:nth-child(8){animation-delay: 0.7s;}
     }
 }
 
-.Slidesbackground {
-    margin: 0;
-    padding: 0;
-
-}
-.slideshow-image{
-    border-radius:3%;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-.mySlides {
-    border-radius:3%;
-    width: 600px;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 15px 15px rgba(0, 0, 0, 0.5);
-}
-
-.slideshow-container {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    margin: auto;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-    to {
-        opacity: 1
-    }
-}
-
-
     </style>
 </head>
 
@@ -340,11 +292,10 @@ h2 span:nth-child(8){animation-delay: 0.7s;}
                         - Bharat Anand, Vice <span>P</span>rovost for Advances in <span>L</span>earn<span>i</span>ng
                         <span>H</span>ogwar<span>t</span> Online bri<span>g</span>s lear<span>n</span>ers an ext<span>e</span>nsive <span>c</span>atalog of courses <span>b</span>uilt on global exper<span>t</span>ise and research. Cura<span>t</span>ed series of courses c<span>o</span>mbine faculty and disc<span>i</span>plines from across the Un<span>i</span>versity to extend <span>l</span>earning o<span>p</span>portun<span>i</span>ties.
                         
-                        Each <span>c</span>ourse was devel<span>o</span>ped by <span>H</span>ogwart’s Office of th<span>e</span> Vice Provost for Adv<span>a</span>nces in Lear<span>n</span>ing (VPAL).We ma<span>k</span>e a pr<span>o</span>mise to <span>e</span>very adm<span>i</span>tted stu<span>d</span>ent: your finan<span>c</span>ial <span>c</span>ircum<span>s</span>tances w<span>i</span>ll not keep you from Hogwa<span>r</span>t.
+                        Each <span>c</span>ourse was devel<span>o</span>ped by <span>H</span>ogwart’s Office of th<span>e</span> Vice Provost for Adv<span>a</span>nces in Lear<span>n</span>ing (VPAL).
                     </h2> </article>
                     <article id="art2">
-                        <article id="dumbul" ><img src="image/덤블연설.gif" alt="" ></article> 
-                        <article id="logo"><img src="image/hogwartSimbol.png" alt="" id="logo"></article>
+                        <article id="dumbul"><img src="image/덤블연설.gif" alt="" ></article> 
                     </article>
               
             </div>
@@ -368,24 +319,5 @@ h2 span:nth-child(8){animation-delay: 0.7s;}
     <!-- 필수 Footer 끝 -->
 </body>
 
-<script>
-    var slideIndex = 0;
-    showSlides();
 
-    function showSlides() {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-       
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        slideIndex++;
-        if (slideIndex > slides.length) {
-            slideIndex = 1
-        }
-        slides[slideIndex - 1].style.display = "block";
-    
-        setTimeout(showSlides, 2000); // 2초마다 이미지가 체인지됩니다
-    }
-</script>
 </html>
