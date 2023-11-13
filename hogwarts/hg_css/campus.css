@@ -1,3 +1,16 @@
+.main3{ /* width/-min-width/height만 통일 나머지는 개인의 디자인에 맞춰서 */
+    width: 85%;
+    min-width: 1500px;
+    height: 100vh;
+    background-color: black;
+    background-image: url(image/오래된\ 신문.jpg);
+    
+ 
+}
+
+/*main의 배경때문에 불러옴 */
+
+
 
 #side-menu{
     background-color:black;
@@ -95,7 +108,7 @@ font-family: 'HarryPoterFont';
 }
 
 
-#bigbox5 {
+#bigbox4 {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +127,7 @@ font-family: 'HarryPoterFont';
     font-family: 'HarryPoterFont';
 }
 
-#bigbox6 {
+#bigbox5 {
     display: flex;
     justify-content: center;
 }
@@ -216,3 +229,4 @@ input[type="text"], input[type="email"], input[type="password"], input[type="sea
     font-family: 'HarryPoterFont';
     color:antiquewhite
 }
+
